@@ -1,0 +1,31 @@
+/*
+QPushButton {
+        border-radius: none;
+        background: transparent;
+}
+*/
+/*发送按钮*/
+QPushButton#btn_send {
+    border-radius: none;
+    image: url(:/send);
+    background: transparent;
+}
+QPushButton#btn_send:hover {
+    image: url(:/send_hover);
+}
+QPushButton#btn_send:pressed {
+    image: url(:/send);
+}
+/*日志清除按钮*/
+QPushButton#btn_clean {
+    border-radius: none;
+    image: url(:/clean);
+    background: transparent;
+}
+QPushButton#btn_clean:hover {
+    image: url(:/clean_hover);
+}
+QPushButton#btn_clean:pressed {
+    image: url(:/clean);
+}
+

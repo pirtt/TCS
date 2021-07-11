@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>tcs.ico</file>
+        <file>tcs.css</file>
+        <file>send.png</file>
+        <file>send_hover.png</file>
+        <file>clean.png</file>
+        <file>clean_hover.png</file>
+        <file>arrow_down.png</file>
+        <file>arrow_down_hover.png</file>
+    </qresource>
+</RCC>
