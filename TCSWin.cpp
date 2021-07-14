@@ -41,6 +41,7 @@ TCSWin::TCSWin(QWidget *parent) : QWidget(parent), m_configSetting(QCoreApplicat
         m_chatFQ.push(chat.get());
     }
     m_chatui->setupUi(this);
+    // setWindowFlags(Qt::FramelessWindowHint);
     m_chatui->combo_msrp_fileacc->setCurrentIndex(MSRPSERVER);
     m_chatServerIndex = MSRPSERVER;
     m_chatui->combo_send_recv->setCurrentIndex(Method::UPLOAD);
@@ -106,9 +107,8 @@ TCSWin::TCSWin(QWidget *parent) : QWidget(parent), m_configSetting(QCoreApplicat
     m_statSeries->append(m_sendStat);
     m_statSeries->append(m_recvStat);
 
-    //设置Char，类似于设计excel直方图的标签和导入数据
     QChart *chart = new QChart();
-    chart->addSeries(m_statSeries);                             //将serise添加到Char中
+    chart->addSeries(m_statSeries);                       //将serise添加到Char中
     chart->setTitle("recv and send msg Stat");            //char 的标题设置为
     chart->setAnimationOptions(QChart::SeriesAnimations); //动画在图表中启用
     QStringList categories;

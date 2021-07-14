@@ -8,5 +8,6 @@
         <file>clean_hover.png</file>
         <file>arrow_down.png</file>
         <file>arrow_down_hover.png</file>
+        <file>bg.jpeg</file>
     </qresource>
 </RCC>

@@ -256,7 +256,11 @@
         </layout>
        </item>
        <item>
-        <widget class="QTextEdit" name="edit_input"/>
+        <widget class="QTextEdit" name="edit_input">
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+        </widget>
        </item>
        <item>
         <layout class="QHBoxLayout" name="sendlay">
@@ -328,6 +332,9 @@
            <property name="toolTip">
             <string>发送</string>
            </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
            <property name="text">
             <string/>
            </property>
@@ -344,6 +351,12 @@
        </property>
        <item>
         <widget class="QTabWidget" name="taboption">
+         <property name="acceptDrops">
+          <bool>false</bool>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
          <property name="currentIndex">
           <number>1</number>
          </property>
